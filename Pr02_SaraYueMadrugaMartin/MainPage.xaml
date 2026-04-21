@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pr02_SaraYueMadrugaMartin.MainPage">
-
+    
+    
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -31,6 +32,18 @@
                 Clicked="ClickedHuella"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
+
+            <Button
+                Text="Click me"
+                CommandParameter="Mustang"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="Click me"
+                CommandParameter="Appaloosa"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 

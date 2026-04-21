@@ -4,11 +4,23 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Pr02_SaraYueMadrugaMartin"
+    Shell.FlyoutBehavior="Flyout"
     Title="Pr02_SaraYueMadrugaMartin">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem
+        Title="Home">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="Page1">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:NewPage1}"
+            Route="MainPage" />        
+    </FlyoutItem>
 
 </Shell>

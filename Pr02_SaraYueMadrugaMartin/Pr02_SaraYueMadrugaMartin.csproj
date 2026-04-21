@@ -65,4 +65,22 @@
 		<PackageReference Include="Plugin.Fingerprint" Version="2.1.5" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="HorseBreed.xaml.cs">
+	    <DependentUpon>HorseBreed.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="HorseBreed.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="NewPage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PaginaSimple.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
