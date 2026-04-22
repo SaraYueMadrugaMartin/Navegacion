@@ -4,11 +4,25 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Pr02_SaraYueMadrugaMartin"
+    Shell.FlyoutBehavior="Flyout"
     Title="Pr02_SaraYueMadrugaMartin">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!-- Boton lateral de la pagina del menu principal. -->
+    <FlyoutItem
+        Title="Home">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <!-- Boton lateral de la pagina de la galeria. -->
+    <FlyoutItem
+        Title="Galeria">
+        <ShellContent
+            Title="Galeria"
+            ContentTemplate="{DataTemplate local:Galeria}"
+            Route="Galeria" />        
+    </FlyoutItem>
 
 </Shell>

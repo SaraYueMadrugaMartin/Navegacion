@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pr02_SaraYueMadrugaMartin.Galeria"
+             Title="Galeria">
+    
+    <VerticalStackLayout
+        Padding="20" 
+        Spacing="20">
+
+        <Label 
+            Text="Razas de caballos"
+            FontSize="30"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Grid
+            ColumnDefinitions="*,*"
+            RowDefinitions="*,*,*"
+            ColumnSpacing="20"
+            RowSpacing="20">
+
+            <!-- Informacion del Mustang -->
+            <VerticalStackLayout
+                Grid.Row="0"
+                Grid.Column="0"
+                Spacing="5">
+                
+                <ImageButton
+                    Source="img_mustang.jpg"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    BackgroundColor="LightGray"
+                    Aspect="AspectFill"
+                    CommandParameter="Mustang"
+                    Clicked="OnCounterClicked" />
+
+                <Label
+                    Text="Mustang"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Informacion del Appaloosa -->
+            <VerticalStackLayout
+                Grid.Row="0"
+                Grid.Column="1"
+                Spacing="5">
+                
+                <ImageButton
+                    Source="img_appaloosa.jpg"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    BackgroundColor="LightGray"
+                    Aspect="AspectFill"
+                    CommandParameter="Appaloosa"
+                    Clicked="OnCounterClicked" />
+
+                <Label
+                    Text="Appaloosa"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Informacion del Paint -->
+            <VerticalStackLayout
+                Grid.Row="1"
+                Grid.Column="0"
+                Spacing="5">
+                
+                <ImageButton
+                    Source="img_paint.jpg"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    BackgroundColor="LightGray"
+                    Aspect="AspectFill"
+                    CommandParameter="Paint"
+                    Clicked="OnCounterClicked" />
+
+                <Label
+                    Text="Paint"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Informacion del Friesian -->
+            <VerticalStackLayout
+                Grid.Row="1"
+                Grid.Column="1"
+                Spacing="5">
+                
+                <ImageButton
+                    Source="img_friesian.jpg"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    BackgroundColor="LightGray"
+                    Aspect="AspectFill"
+                    CommandParameter="Friesian"
+                    Clicked="OnCounterClicked" />
+
+                <Label
+                    Text="Friesian"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Informacion del Arabe -->
+            <VerticalStackLayout
+                Grid.Row="2"
+                Grid.Column="0"
+                Spacing="5">
+
+                <ImageButton
+                    Source="img_arabe.jpg"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    BackgroundColor="LightGray"
+                    Aspect="AspectFill"
+                    CommandParameter="Arabe"
+                    Clicked="OnCounterClicked" />
+
+                <Label
+                    Text="Arabe"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Informacion del Haflinger -->
+            <VerticalStackLayout
+                Grid.Row="2"
+                Grid.Column="2"
+                Spacing="5">
+
+                <ImageButton
+                    Source="img_haflinger.jpg"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    BackgroundColor="LightGray"
+                    Aspect="AspectFill"
+                    CommandParameter="Haflinger"
+                    Clicked="OnCounterClicked" />
+
+                <Label
+                    Text="Haflinger"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

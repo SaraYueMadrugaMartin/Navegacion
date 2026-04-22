@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pr02_SaraYueMadrugaMartin.SettingsPage"
+             Title="Ajustes">
+
+    <Grid>
+        <Image Source="img_backgsetting.jpg"
+               Aspect="AspectFill"
+               Opacity="0.8" />
+
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Desplegable para seleccionar entre diferentes fuentes. -->
+            <Picker Title="Cambiar fuente de texto"
+                    SelectedIndexChanged="ChangeFontFamily">
+                <Picker.Items>
+                    <x:String>Arial</x:String>
+                    <x:String>TimesNewRoman</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Recuadro de ejemplo para ver el texto con la nueva fuente seleccionada. -->
+            <Border Padding="15"
+                    BackgroundColor="#50FFFFFF">
+
+                <Label x:Name="FontPreview"
+                       Text="Texto de ejemplo"
+                       FontSize="20"
+                       HorizontalOptions="Center" />
+            </Border>
+
+        </VerticalStackLayout>
+    </Grid>
+    
+</ContentPage>

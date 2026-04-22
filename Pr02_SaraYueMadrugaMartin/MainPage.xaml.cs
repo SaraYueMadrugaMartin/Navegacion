@@ -1,24 +1,27 @@
-﻿namespace Pr02_SaraYueMadrugaMartin
+﻿using Plugin.Fingerprint;
+using Plugin.Fingerprint.Abstractions;
+
+namespace Pr02_SaraYueMadrugaMartin
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        public string WelcomeText => $"Bienvenido, {App.UserName}"; // Variable para mostrar en la pagina con el nombre del usuario.
 
         public MainPage()
         {
             InitializeComponent();
+
+            BindingContext = this; // Buscamos las propiedades de esta pagina para poder utilizarlas.
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        /// <summary>
+        /// Método para navegar a la pagina de ajustes.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void SettingsClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            await Navigation.PushAsync(new SettingsPage());
         }
     }
 }
