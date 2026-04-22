@@ -18,6 +18,10 @@
             <x:Double x:Key="FontSubtitle">22</x:Double>
             <x:Double x:Key="FontBody">16</x:Double>
 
+            <!-- Color fuente-->
+            <Color x:Key="ColorDarkMode">White</Color>
+            <Color x:Key="ColorLightMode">Black</Color>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -18,7 +18,6 @@
 
             <!-- Texto inicial -->
             <Label Text="Identifícate"
-                   TextColor="Black"
                    FontSize="50"
                    HorizontalOptions="Center" />
 
@@ -26,7 +25,6 @@
             <Entry x:Name="UserName"
                    Placeholder="Nombre de usuario"
                    BackgroundColor="#90FAE4E1"
-                   PlaceholderColor="White"
                    HorizontalOptions="Center"
                    WidthRequest="300"
                    FontSize="20"/>
@@ -45,7 +43,6 @@
             <Button x:Name="HuellaBoton"
                     Text="Huella"
                     FontSize="30"
-                    TextColor="White"
                     BackgroundColor="#70FAE4E1"
                     FontAttributes="Bold"
                     CornerRadius="25"

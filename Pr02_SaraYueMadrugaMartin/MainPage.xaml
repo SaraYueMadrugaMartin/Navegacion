@@ -14,7 +14,6 @@
 
             <!-- Texto de bienvenida con el nombre que haya puesto el usuario. -->
             <Label Text="{Binding WelcomeText}"
-                   TextColor="White"
                    FontSize="{DynamicResource FontTitle}"
                    HorizontalOptions="Center" />
 
