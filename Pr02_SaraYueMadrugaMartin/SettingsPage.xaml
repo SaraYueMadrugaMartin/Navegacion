@@ -16,7 +16,28 @@
                     SelectedIndexChanged="ChangeFontFamily">
                 <Picker.Items>
                     <x:String>Arial</x:String>
-                    <x:String>TimesNewRoman</x:String>
+                    <x:String>Times New Roman</x:String>
+                    <x:String>Open Sans Regular</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Desplegable para seleccionar entre diferentes tamaños de texto. -->
+            <Picker Title="Tamaño del texto"
+                    SelectedIndexChanged="ChangeFontSize">
+                <Picker.Items>
+                    <x:String>Pequeño</x:String>
+                    <x:String>Normal</x:String>
+                    <x:String>Grande</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Desplegable para seleccionar entre diferentes colores de texto. -->
+            <Picker Title="Color del texto"
+                    SelectedIndexChanged="ChangeFontColor">
+                <Picker.Items>
+                    <x:String>Rojo</x:String>
+                    <x:String>Azul</x:String>
+                    <x:String>Amarillo</x:String>
                 </Picker.Items>
             </Picker>
 
@@ -26,7 +47,6 @@
 
                 <Label x:Name="FontPreview"
                        Text="Texto de ejemplo"
-                       FontSize="20"
                        HorizontalOptions="Center" />
             </Border>
 

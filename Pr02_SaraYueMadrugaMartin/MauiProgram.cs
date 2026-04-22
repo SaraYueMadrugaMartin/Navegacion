@@ -11,9 +11,9 @@ namespace Pr02_SaraYueMadrugaMartin
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("OpenSans-Regular.ttf", "Open Sans Regular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                    fonts.AddFont("times.ttf", "TimesNewRoman");
+                    fonts.AddFont("times.ttf", "Times New Roman");
                     fonts.AddFont("ARIAL.TTF", "Arial");
                 });
 

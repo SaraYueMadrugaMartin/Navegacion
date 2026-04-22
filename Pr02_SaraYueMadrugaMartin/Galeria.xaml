@@ -10,7 +10,6 @@
 
         <Label 
             Text="Razas de caballos"
-            FontSize="30"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
