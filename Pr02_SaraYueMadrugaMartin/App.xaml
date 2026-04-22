@@ -10,7 +10,13 @@
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
+            <!-- Tipografia fuente -->
             <x:String x:Key="AppFontFamily">Arial</x:String>
+
+            <!-- Tamaño fuente -->
+            <x:Double x:Key="FontTitle">32</x:Double>
+            <x:Double x:Key="FontSubtitle">22</x:Double>
+            <x:Double x:Key="FontBody">16</x:Double>
 
         </ResourceDictionary>
     </Application.Resources>

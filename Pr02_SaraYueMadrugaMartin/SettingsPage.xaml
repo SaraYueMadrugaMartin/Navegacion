@@ -20,13 +20,21 @@
                 </Picker.Items>
             </Picker>
 
+            <Picker Title="Tamaño del texto"
+                    SelectedIndexChanged="ChangeFontSize">
+                <Picker.Items>
+                    <x:String>Pequeño</x:String>
+                    <x:String>Normal</x:String>
+                    <x:String>Grande</x:String>
+                </Picker.Items>
+            </Picker>
+
             <!-- Recuadro de ejemplo para ver el texto con la nueva fuente seleccionada. -->
             <Border Padding="15"
                     BackgroundColor="#50FFFFFF">
 
                 <Label x:Name="FontPreview"
                        Text="Texto de ejemplo"
-                       FontSize="20"
                        HorizontalOptions="Center" />
             </Border>
 
