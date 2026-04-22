@@ -16,7 +16,7 @@
 
         <Grid
             ColumnDefinitions="*,*"
-            RowDefinitions="*,*"
+            RowDefinitions="*,*,*"
             ColumnSpacing="20"
             RowSpacing="20">
 
@@ -31,7 +31,7 @@
                     HeightRequest="150"
                     WidthRequest="150"
                     BackgroundColor="LightGray"
-                    Aspect="AspectFit"
+                    Aspect="AspectFill"
                     CommandParameter="Mustang"
                     Clicked="OnCounterClicked" />
 
@@ -51,7 +51,7 @@
                     HeightRequest="150"
                     WidthRequest="150"
                     BackgroundColor="LightGray"
-                    Aspect="AspectFit"
+                    Aspect="AspectFill"
                     CommandParameter="Appaloosa"
                     Clicked="OnCounterClicked" />
 
@@ -71,7 +71,7 @@
                     HeightRequest="150"
                     WidthRequest="150"
                     BackgroundColor="LightGray"
-                    Aspect="AspectFit"
+                    Aspect="AspectFill"
                     CommandParameter="Paint"
                     Clicked="OnCounterClicked" />
 
@@ -91,12 +91,52 @@
                     HeightRequest="150"
                     WidthRequest="150"
                     BackgroundColor="LightGray"
-                    Aspect="AspectFit"
+                    Aspect="AspectFill"
                     CommandParameter="Friesian"
                     Clicked="OnCounterClicked" />
 
                 <Label
                     Text="Friesian"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Informacion del Arabe -->
+            <VerticalStackLayout
+                Grid.Row="2"
+                Grid.Column="0"
+                Spacing="5">
+
+                <ImageButton
+                    Source="img_arabe.jpg"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    BackgroundColor="LightGray"
+                    Aspect="AspectFill"
+                    CommandParameter="Arabe"
+                    Clicked="OnCounterClicked" />
+
+                <Label
+                    Text="Arabe"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Informacion del Haflinger -->
+            <VerticalStackLayout
+                Grid.Row="2"
+                Grid.Column="2"
+                Spacing="5">
+
+                <ImageButton
+                    Source="img_haflinger.jpg"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    BackgroundColor="LightGray"
+                    Aspect="AspectFill"
+                    CommandParameter="Haflinger"
+                    Clicked="OnCounterClicked" />
+
+                <Label
+                    Text="Haflinger"
                     HorizontalOptions="Center" />
             </VerticalStackLayout>
 

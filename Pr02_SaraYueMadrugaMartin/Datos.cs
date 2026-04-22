@@ -29,23 +29,33 @@ namespace Pr02_SaraYueMadrugaMartin
             {
                 case "Mustang":
                     horseData.nombre = "Mustang";
-                    horseData.imagen = "img_mustang.jpg";
+                    horseData.imagen = "img_mustang02.jpg";
                     horseData.familia = "Mustang";
                     break;
                 case "Appaloosa":
                     horseData.nombre = "Appaloosa";
-                    horseData.imagen = "img_appaloosa.jpg";
+                    horseData.imagen = "img_appaloosa02.jpg";
                     horseData.familia = "Appaloosa";
                     break;
                 case "Paint":
                     horseData.nombre = "Paint";
-                    horseData.imagen = "img_paint.jpg";
+                    horseData.imagen = "img_paint02.jpg";
                     horseData.familia = "Paint";
                     break;
                 case "Friesian":
                     horseData.nombre = "Friesian";
-                    horseData.imagen = "img_friesian.jpg";
+                    horseData.imagen = "img_friesian02.jpg";
                     horseData.familia = "Friesian";
+                    break;
+                case "Arabe":
+                    horseData.nombre = "Arabe";
+                    horseData.imagen = "img_arabe02.jpg";
+                    horseData.familia = "Arabe";
+                    break;
+                case "Haflinger":
+                    horseData.nombre = "Haflinger";
+                    horseData.imagen = "img_haflinger02.jpg";
+                    horseData.familia = "Haflinger";
                     break;
                 default:
                     break;
