@@ -9,6 +9,28 @@
                Aspect="AspectFill"
                Opacity="0.8" />
 
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Desplegable para seleccionar entre diferentes fuentes. -->
+            <Picker Title="Cambiar fuente de texto"
+                    SelectedIndexChanged="ChangeFontFamily">
+                <Picker.Items>
+                    <x:String>Arial</x:String>
+                    <x:String>TimesNewRoman</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Recuadro de ejemplo para ver el texto con la nueva fuente seleccionada. -->
+            <Border Padding="15"
+                    BackgroundColor="#50FFFFFF">
+
+                <Label x:Name="FontPreview"
+                       Text="Texto de ejemplo"
+                       FontSize="20"
+                       HorizontalOptions="Center" />
+            </Border>
+
+        </VerticalStackLayout>
     </Grid>
     
 </ContentPage>

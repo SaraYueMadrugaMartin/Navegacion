@@ -13,6 +13,8 @@ namespace Pr02_SaraYueMadrugaMartin
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("times.ttf", "TimesNewRoman");
+                    fonts.AddFont("ARIAL.TTF", "Arial");
                 });
 
 #if DEBUG
