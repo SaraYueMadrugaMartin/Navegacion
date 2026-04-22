@@ -84,6 +84,9 @@
 	  <MauiXaml Update="Galeria.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Razas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

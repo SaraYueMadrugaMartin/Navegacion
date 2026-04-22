@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pr02_SaraYueMadrugaMartin.LoginPage"
+             Title="LoginPage">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <Image Source="img_login.jpg"
+               Aspect="AspectFill"
+               Opacity="0.8"
+               Grid.RowSpan="3" />
+
+        <VerticalStackLayout Grid.Row="0"
+                             Padding="30,150,30,10"
+                             Spacing="10">
+
+            <Label Text="¡Bienvenido!"
+                   TextColor="Black"
+                   FontSize="50"
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <BoxView Grid.Row="1"
+                 Opacity="0" />
+
+        <VerticalStackLayout Grid.Row="2"
+                             Padding="30,0,30,150"
+                             Spacing="15"
+                             VerticalOptions="End">
+
+            <Button x:Name="HuellaBoton"
+                    Text="Huella"
+                    TextColor="White"
+                    BackgroundColor="#2D6CDF"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    HeightRequest="60"
+                    WidthRequest="100"
+                    Clicked="ClickedHuella"
+                    HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+
+    </Grid>
+    
+</ContentPage>
