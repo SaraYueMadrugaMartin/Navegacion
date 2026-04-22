@@ -3,24 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pr02_SaraYueMadrugaMartin.PaginaSimple"
              Title="Información">
+
+    <Grid>
+        <Image Source="img_backggaleria.jpg"
+               Aspect="AspectFill"
+               Opacity="0.5"/>
+
+        <!-- Pagina dinamica para mostrar la informacion de cada raza de caballo que quiera ver el usuario. -->
+        <VerticalStackLayout Spacing="25"
+                             Padding="0,40,0,0">
+
+            <!-- Propiedad del nombre. -->
+            <Label 
+                Text="{Binding nombre}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+            
+            <!-- Propiedad de imagen. -->
+            <Image
+                Source="{Binding imagen}"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+            
+            <!-- Propiedad de la familia. -->
+            <Label
+                Text="{Binding familia}"
+                Margin="30"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Justify"/>
+        </VerticalStackLayout>
+    </Grid>
     
-    <!-- Pagina dinamica para mostrar la informacion de cada raza de caballo que quiera ver el usuario. -->
-    
-    <VerticalStackLayout>
-        <!-- Propiedad del nombre. -->
-        <Label 
-            Text="{Binding nombre}"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
-        <!-- Propiedad de imagen. -->
-        <Image
-            Source="{Binding imagen}"
-            HeightRequest="185"
-            Aspect="AspectFit" />
-        <!-- Propiedad de la familia. -->
-        <Label
-            Text="{Binding familia}"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
 </ContentPage>
