@@ -8,6 +8,7 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
@@ -32,18 +33,7 @@
                 Clicked="ClickedHuella"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-
-            <Button
-                Text="Click me"
-                CommandParameter="Mustang"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
-
-            <Button
-                Text="Click me"
-                CommandParameter="Appaloosa"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+            
         </VerticalStackLayout>
     </ScrollView>
 

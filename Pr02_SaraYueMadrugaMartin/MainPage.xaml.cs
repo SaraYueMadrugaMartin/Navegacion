@@ -20,24 +20,5 @@ namespace Pr02_SaraYueMadrugaMartin
             else
                 await DisplayAlert(title: "Acceso", message: "Acceso denegado", cancel: "Cerrar");
         }
-
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            Button button = sender as Button;
-            string horse = button.CommandParameter.ToString();
-
-            Datos data = new Datos();
-            HorseData horseData = data.GetAnimalData(horse);
-
-            Navigation.PushAsync(new PaginaSimple()
-            {
-                BindingContext = new HorseData
-                {
-                    nombre = horseData.nombre,
-                    imagen = horseData.imagen,
-                    familia = horseData.familia,
-                }                
-            });
-        }
     }
 }

@@ -16,11 +16,11 @@
     </FlyoutItem>
 
     <FlyoutItem
-        Title="Page1">
+        Title="Galeria">
         <ShellContent
-            Title="Home"
-            ContentTemplate="{DataTemplate local:NewPage1}"
-            Route="MainPage" />        
+            Title="Galeria"
+            ContentTemplate="{DataTemplate local:Galeria}"
+            Route="Galeria" />        
     </FlyoutItem>
 
 </Shell>

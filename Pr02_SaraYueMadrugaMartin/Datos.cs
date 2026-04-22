@@ -24,6 +24,16 @@ namespace Pr02_SaraYueMadrugaMartin
                     animal.imagen = "img_appaloosa.jpg";
                     animal.familia = "Appaloosa";
                     break;
+                case "Paint":
+                    animal.nombre = "Paint";
+                    animal.imagen = "img_paint.jpg";
+                    animal.familia = "Paint";
+                    break;
+                case "Friesian":
+                    animal.nombre = "Friesian";
+                    animal.imagen = "img_friesian.jpg";
+                    animal.familia = "Friesian";
+                    break;
                 default:
                     break;
             }

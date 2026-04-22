@@ -69,16 +69,22 @@
 	  <Compile Update="HorseBreed.xaml.cs">
 	    <DependentUpon>HorseBreed.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Galeria.xaml.cs">
+	    <DependentUpon>Galeria.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Razas.xaml.cs">
+	    <DependentUpon>Razas.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="HorseBreed.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="NewPage1.xaml">
+	  <MauiXaml Update="Galeria.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="PaginaSimple.xaml">
+	  <MauiXaml Update="Razas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
