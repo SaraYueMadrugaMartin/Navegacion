@@ -6,19 +6,31 @@
 
     <Grid RowDefinitions="Auto,*,Auto">
 
+        <!-- Imagen de fondo -->
         <Image Source="img_login.jpg"
                Aspect="AspectFill"
                Opacity="0.8"
                Grid.RowSpan="3" />
 
         <VerticalStackLayout Grid.Row="0"
-                             Padding="30,150,30,10"
-                             Spacing="10">
+                             Padding="30,90,30,10"
+                             Spacing="120">
 
-            <Label Text="¡Bienvenido!"
+            <!-- Texto inicial -->
+            <Label Text="Identifícate"
                    TextColor="Black"
                    FontSize="50"
                    HorizontalOptions="Center" />
+
+            <!-- Nombre de usuario -->
+            <Entry x:Name="UserName"
+                   Placeholder="Nombre de usuario"
+                   BackgroundColor="#90FAE4E1"
+                   PlaceholderColor="White"
+                   HorizontalOptions="Center"
+                   WidthRequest="300"
+                   FontSize="20"/>
+
         </VerticalStackLayout>
 
         <BoxView Grid.Row="1"
@@ -29,14 +41,16 @@
                              Spacing="15"
                              VerticalOptions="End">
 
+            <!-- Boton para poner la huella del usuario. -->
             <Button x:Name="HuellaBoton"
                     Text="Huella"
+                    FontSize="30"
                     TextColor="White"
-                    BackgroundColor="#2D6CDF"
+                    BackgroundColor="#70FAE4E1"
                     FontAttributes="Bold"
                     CornerRadius="25"
-                    HeightRequest="60"
-                    WidthRequest="100"
+                    HeightRequest="70"
+                    WidthRequest="200"
                     Clicked="ClickedHuella"
                     HorizontalOptions="Center"/>
         </VerticalStackLayout>

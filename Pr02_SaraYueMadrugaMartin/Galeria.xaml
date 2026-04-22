@@ -20,7 +20,7 @@
             ColumnSpacing="20"
             RowSpacing="20">
 
-            <!-- Mustang -->
+            <!-- Informacion del Mustang -->
             <VerticalStackLayout
                 Grid.Row="0"
                 Grid.Column="0"
@@ -40,7 +40,7 @@
                     HorizontalOptions="Center" />
             </VerticalStackLayout>
 
-            <!-- Appaloosa -->
+            <!-- Informacion del Appaloosa -->
             <VerticalStackLayout
                 Grid.Row="0"
                 Grid.Column="1"
@@ -60,7 +60,7 @@
                     HorizontalOptions="Center" />
             </VerticalStackLayout>
 
-            <!-- Paint -->
+            <!-- Informacion del Paint -->
             <VerticalStackLayout
                 Grid.Row="1"
                 Grid.Column="0"
@@ -80,7 +80,7 @@
                     HorizontalOptions="Center" />
             </VerticalStackLayout>
 
-            <!-- Friesian -->
+            <!-- Informacion del Friesian -->
             <VerticalStackLayout
                 Grid.Row="1"
                 Grid.Column="1"

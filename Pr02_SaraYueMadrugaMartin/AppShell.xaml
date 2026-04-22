@@ -7,6 +7,7 @@
     Shell.FlyoutBehavior="Flyout"
     Title="Pr02_SaraYueMadrugaMartin">
 
+    <!-- Boton lateral de la pagina del menu principal. -->
     <FlyoutItem
         Title="Home">
         <ShellContent
@@ -15,6 +16,7 @@
             Route="MainPage" />
     </FlyoutItem>
 
+    <!-- Boton lateral de la pagina de la galeria. -->
     <FlyoutItem
         Title="Galeria">
         <ShellContent

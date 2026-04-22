@@ -5,17 +5,24 @@
 
     <Grid>
         <Image Source="img_backgorund.jpg"
-           Aspect="AspectFill"
-           Opacity="0.8" />
+               Aspect="AspectFill"
+               Opacity="0.9" />
 
-        <VerticalStackLayout Padding="30"
-                         Spacing="20"
-                         VerticalOptions="Start">
+        <VerticalStackLayout Padding="30,100,30,30"
+                             Spacing="150"
+                             VerticalOptions="Start">
 
-            <Label Text="¡Bienvenido!"
-               TextColor="White"
-               FontSize="28"
-               HorizontalOptions="Center" />
+            <!-- Texto de bienvenida con el nombre que haya puesto el usuario. -->
+            <Label Text="{Binding WelcomeText}"
+                   TextColor="White"
+                   FontSize="28"
+                   HorizontalOptions="Center" />
+
+            <!-- Boton de Ajustes. -->
+            <Button x:Name="Ajustes"
+                    Text="Ajustes"
+                    BackgroundColor="#70FAE4E1"
+                    Clicked="SettingsClicked" />
         </VerticalStackLayout>
         
     </Grid>
